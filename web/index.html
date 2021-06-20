@@ -9,18 +9,94 @@
 </head>
 <body>
     <header class="main">
-        <div class="center">
-            <div class="menu">
-                <div class="logo"></div>
-                <div class="menu"></div>
-            </div>
-            <div class="text-header">
-                <h1></h1>
-                <p></p>
+        <div class="main2">
+            <div class="center">
+                <div class="menu">
+                    <div class="logo">
+                        <div class="logo2"><h1>LOGO</h1></div>   
+                    </div>
+                    <div class="itens-menu">
+                        <span><a href="">Home</a></span>
+                        <span><a href="">Serviços</a></span>
+                        <span><a href="">Sobre</a></span>
+                        <span><a href="">Contato</a></span>
+                    </div>
+                    <div id="img-menu" onclick="openNav()">
+                        <img class="merda-de-img" style="width: 50px;" src="/web/img/menu-preto-removebg-preview.png" alt=""> 
+                    </div>
+                    <div id="mySidebar" class="sidebar">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <a href="#">Home</a>
+                        <a href="#">Serviços</a>
+                        <a href="#">Sobre</a>
+                        <a href="#">Contato</a>
+                      </div>
+                </div>
+                <div class="text-header">
+                    <div class="all-header-text"></div>
+                        <h1>Sistemas próprios para empresas autênticas</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ea repellat repudiandae labore.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
-
+    <section class="inf">
+        <div class="inf-center">
+            <div class="box-all-inf">
+                <div class="inf-all">
+                    <h1>Desenvolvemos sistemas únicos</h1>
+                    <p>Para todas as plataformas e diversos segmentos:</p>
+                    <ul>
+                        <li>Lojas virtuais</li>
+                        <li>Sites institucionais</li>
+                        <li>Sistemas corporativos</li>
+                        <li>Muitos outros</li>
+                    </ul>
+                    <button>Entre em Contato</button>
+                </div>
+                <div class="inf-img">
+                    <img src="/web/img/Group 2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sobre">
+        <div class="sobre-center">
+            <div class="box1">
+                <h1>Desenvolvido por pessoas e para pessoas</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste sunt, eligendi quia repellat necessitatibus repellendus dolores magnam, nulla odio perferendis vero, soluta fugiat possimus molestias ipsum sit. Cum, porro veniam!</p>
+            </div>
+            <div class="sobre-box-img">
+                <img src="/web/img/Layer 22.png" alt="">
+            </div>
+            <div class="box2-time">
+                <h1>Nosso time</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, excepturi, libero exercitationem cumque maxime adipisci obcaecati.</p>
+            </div>
+            <div class="box3-dev">
+                <div class="pessoa">
+                    <h1>nome da pessoa</h1>
+                    <p>Profissão</p>
+                    <img src="" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore libero labore ipsa tenetur debitis voluptate laudantium excepturi iusto similique!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="box-msg">
+        <h1>quebra linha</h1>
+    </section>
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("mainx").style.marginLeft = "250px";
+        }
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("mainx").style.marginLeft= "0";
+        }
+        </script>
 
     
 </body>
