@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/web/css/style.css">
+    <title>Web</title>
+</head>
+<body>
+    <header class="main">
+        <div class="main2">
+            <div class="center">
+                <div class="menu">
+                    <div class="logo">
+                        <div class="logo2"><h1>LOGO</h1></div>   
+                    </div>
+                    <div class="itens-menu">
+                        <span><a href="">Home</a></span>
+                        <span><a href="">Serviços</a></span>
+                        <span><a href="">Sobre</a></span>
+                        <span><a href="">Contato</a></span>
+                    </div>
+                    <div id="img-menu" onclick="openNav()">
+                        <img class="merda-de-img" style="width: 50px;" src="/web/img/menu-preto-removebg-preview.png" alt=""> 
+                    </div>
+                    <div id="mySidebar" class="sidebar">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <a href="#">Home</a>
+                        <a href="#">Serviços</a>
+                        <a href="#">Sobre</a>
+                        <a href="#">Contato</a>
+                      </div>
+                </div>
+                <div class="text-header">
+                    <div class="all-header-text"></div>
+                        <h1>Sistemas próprios para empresas autênticas</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ea repellat repudiandae labore.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("mainx").style.marginLeft = "250px";
+        }
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("mainx").style.marginLeft= "0";
+        }
+        </script>
 
+    
+</body>
+</html>
