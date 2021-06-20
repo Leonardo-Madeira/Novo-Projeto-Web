@@ -1,0 +1,243 @@
+*{ 
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html,body{
+    font-family: sans-serif;
+}
+
+:root{
+    --color:rgb(22, 17, 26);
+}
+
+.main{
+    background-image: url(/web/img/6.jpg); /*Ou 4*/
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(60%);
+    height: 881px;
+    max-width: 100%;
+}
+.main2{
+    width: 100%;
+    max-width: 100%;
+    height: 100px;
+    padding-top: 50px;
+}
+.center{
+    width: 1550px;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 4%;
+
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+}
+.logo{
+    width: 30%;
+    max-width: 100%;
+}
+.logo2{
+    background-color: rgba(255, 255, 255, 0.952);
+    width: 180px;
+    max-width: 100%;
+    height: 90px;
+    padding-top: 15px;
+}
+.logo h1{
+    font-size: 50px;
+    text-align: center;
+    max-width: 100%;
+}
+.itens-menu{
+   width: 70%;
+   max-width: 100%;
+    font-size: 24px;
+    text-align: right;
+    padding-top: 30px;
+
+}
+.itens-menu a{
+    color: rgba(255, 255, 255, 0.815);
+    text-decoration: none;
+    padding-right: 30px;
+    width: 100%;
+    max-width: 100%;
+    text-shadow: 2px 2px 2px black;
+}
+
+.itens-menu a:hover{
+    color: var(--color);
+}
+/*MENU MOBILE*/
+#img-menu{
+    display: none;
+}
+
+.sidebar{ 
+    display: none;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  /*MENU RESPONSIVO*/
+  @media(max-width:768px){
+      .itens-menu{
+          display: none;
+      }
+      #img-menu{
+          display: block;
+          width: 70%;
+          text-align: right;
+          padding-top: 20px;
+          cursor: pointer;
+      }
+  }
+
+/*****************************/
+
+.text-header{
+    width: 100%;
+    margin-top: 220px;
+    background-color: var(--color);
+    text-align: center;
+    max-width: 100%;
+}
+.all-header-text{
+    background-color: var(--color);
+    width: 100%;
+    max-width: 100%;
+}
+.text-header h1{
+    text-align: center;
+    font-size: 50px; 
+    width: 600px;
+    max-width: 100%;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px black;
+    background-color: yellow;
+
+}
+.text-header p{
+
+    color: rgb(53, 53, 53);
+    font-size: 17px; 
+    width: 600px;
+    max-width: 100%;
+    text-shadow: 1px 1px 1px black;
+    background-color: yellowgreen;
+}
+
+/****************informações*****************************/
+.inf{
+    background-color: var(--color);
+    height: 500px;
+}
+.inf-center{
+
+    width: 1200px;
+    margin: auto;
+    background-color: cadetblue;
+}
+
+.box-all-inf{
+    display: flex;
+    width: 100%;
+}
+.inf-all{
+    width: 70%;
+    background-color: blue;
+}
+.inf-all h1{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+}
+.inf-all p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 10px;
+}
+.inf-all ul{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+.inf-all li{
+    color: white;
+    background-color: yellowgreen;
+}
+.inf-all button{}
+.inf-img{
+    width: 50%;
+    background-color: red;
+    margin-top: -110px;
+}
+.inf-img img{
+    z-index: 1;
+    position: relative;
+}
+
+/***********************BOX-MSG*******************************/
+.box-msg{
+    background-color: var(--color);
+    height: 100px;
+
+}
