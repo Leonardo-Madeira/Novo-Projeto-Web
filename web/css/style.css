@@ -236,8 +236,6 @@ html,body{
 }
 .inf-img{
     width: 40%;
-    
-
 }
 .inf-img img{
     position: relative;
@@ -286,7 +284,7 @@ html,body{
     position: relative;
     width: 1000px;
     max-width: 100%;
-    filter: grayscale(85%);
+
 }
 .center-box{
     width: 100%;
