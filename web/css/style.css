@@ -221,14 +221,25 @@ body {
 .inf-all button {
   max-width: 100%;
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: pointer;
   display: block;
   margin: auto;
-  color: var(--cor);
+  color: white;
   font-size: 23px;
-  border: 5px solid rgba(0, 0, 0, 0.404);
+  border: 2px solid rgba(0, 0, 0, 0.404);
+  background: var(--cor);
+  box-shadow: 2px 2px 4px black;
+  
 }
+.inf-all button:hover {
+  background-color: white;
+  color: var(--cor);
+}
+
+
+
+
 .inf-img {
   width: 40%;
 }
@@ -238,27 +249,21 @@ body {
 }
 /*RAMBIARRA DA IMAGEM*/
 @media (max-width: 1200px) {
-  .box-all-inf {
-    width: 100%;
-    display: block;
-    height: 730px !important;
-  } /* Todas caixas*/
+  .inf-img {
+    display: none;
+    max-width: 100%;
+  }
   .inf-all {
     width: 100%;
     max-width: 100%;
-    padding: 0 4%;
   }
-  .inf-img img {
-    padding: 0 20%;
-    max-width: 100%;
-  }
-  .inf-img {
+  .box-all-inf {
     width: 100%;
     max-width: 100%;
     display: block;
-    margin: auto;
-    height: 500px;
-  }
+    height: 100% !important;
+    padding: 50px 5%;
+  } /* Todas caixas*/
   .inf-all button {
     display: block;
     margin: 0;
@@ -275,11 +280,6 @@ body {
     height: 100% !important;
     padding-bottom: 50px;
   } /* Todas caixas*/
-}
-@media (max-width: 768px) {
-  .inf-img {
-    max-width: 100%;
-  }
 }
 
 /*FIM RAMBIARRA DA IMAGEM*/
