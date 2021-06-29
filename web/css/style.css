@@ -16,6 +16,7 @@ body {
   background-image: url(/web/img/6.jpg); /*Ou 4*/
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   filter: grayscale(60%);
   min-height: 800px;
   max-width: 100%;
@@ -230,15 +231,11 @@ body {
   border: 2px solid rgba(0, 0, 0, 0.404);
   background: var(--cor);
   box-shadow: 2px 2px 4px black;
-  
 }
 .inf-all button:hover {
   background-color: white;
   color: var(--cor);
 }
-
-
-
 
 .inf-img {
   width: 40%;
@@ -289,150 +286,114 @@ body {
   width: 100%;
   max-width: 100%;
 }
-.sobre-center {
+.center-sobre {
   width: 1200px;
+  max-width: 100%;
   display: block;
   margin: auto;
-  max-width: 100%;
-  height: 500px; /*************AQUI******************************************************************************************/
+  padding: 0 0.5%;
 }
-.box1 {
-  width: 100%;
-  max-width: 100%;
-  height: 400px;
+.text-sobre {
+  padding: 100px 3%;
 }
-.box1 h1 {
+.text-sobre h1 {
   text-align: center;
-  padding-top: 100px;
-  max-width: 100%;
-  font-size: 40px;
-  color: var(--cor);
+  font-size: 35px;
 }
-.box1 p {
-  width: 800px;
-  max-width: 100%;
-  display: block;
-  margin: auto;
-  color: var(--cor);
+.text-sobre p {
+  padding-top: 30px;
   text-align: center;
-  padding: 30px;
 }
-.sobre-box-img {
-  position: relative;
+.img-sobre {
+  text-align: center;
+  margin-top: -300px;
 }
-.sobre-box-img img {
-  display: block;
-  margin: auto;
-  position: relative;
+.img-sobre img {
   width: 1000px;
   max-width: 100%;
+  position: relative;
+  top: 230px;
 }
-.center-box {
-  width: 100%;
+.center-sobre2 {
   display: flex;
-  height: 550px; /**/
-}
-.box2-time {
-  background-color: var(--cor);
-  width: 50%;
-  max-height: 100%;
-  min-height: 100%;
-}
-.box2-time h1 {
-  padding-top: 300px;
-  text-align: center;
-  color: white;
-}
-.box2-time p {
-  display: block;
-  text-align: center;
   width: 100%;
-  padding-right: 5%;
-  color: white;
-  padding-top: 30px;
-  font-size: 20px;
 }
-.box3-dev {
-  width: 30%;
-  max-height: 100%;
-  min-height: 100%;
-}
-.box3-dev h1 {
-  padding-top: 300px;
-  padding-left: 5%;
-  color: var(--cor);
-}
-.box3-dev p {
-  color: var(--cor);
-  font-size: 20px;
-  padding-left: 5%;
-  width: 600px;
-  max-width: 100%;
-}
-.box3-dev img {
-  display: inline-block;
-}
-
-.box-none1 {
+.box1-sobre-none {
+  width: 50%;
+  height: 300px;
   background-color: var(--cor);
-  width: 30%;
-  max-height: 100%;
-  min-height: 100%;
 }
-.box-none2 {
-  background-color: white;
+.box2-sobre-none {
+  width: 50%;
+  height: 300px;
+}
+/**/
+.box1-sobre-extra {
   width: 30%;
-  max-height: 100%;
-  min-height: 100%;
+  height: auto;
+  background-color: var(--cor);
+}
+.box2-sobre-extra {
+  width: 30%;
+  height: auto;
+}
+/**/
+.center-sobre3 {
+  display: flex;
+  width: 100%;
+
+}
+.box1-sobre {
+  width: 70%;
+  height: auto;
+  background-color: var(--cor);
+}
+.box1-sobre h1{
+  padding-top: 40px;
+  text-align: center;
+  color: white;
+}
+.box1-sobre p{
+  padding: 20px 5%;
+  color: rgba(255, 255, 255, 0.644);
+}
+.box2-sobre {
+  width: 70%;
+  height: auto;
+}
+.sobre-pessoa{
+  padding-top: 40px;
+  padding-left: 5%;
+}
+.sobre-pessoa h3{
+  color: rgba(0, 0, 0, 0.692);
+}
+.box2-sobre p{
+  padding-left: 5%;
+  color: rgba(0, 0, 0, 0.568);
 }
 
-@media (max-width: 1000px) {
-  .sobre-box-img {
-    position: absolute;
-  }
-  .center-box {
-    width: 100%;
-    display: flex;
-    height: 100%; /**/
-  
-  }
-  .sobre-center {
-    width: 1200px;
-    display: block;
-    margin: auto;
+
+/*Sobre responsivo*/
+@media (max-width: 868px) {
+  .img-sobre img {
+    width: 1000px;
     max-width: 100%;
-    height: 100%;
+    position: unset;
   }
-  .box2-time{
-    background-color: var(--cor);
-    width: 50%;
-    max-height: 100%;
-    min-height: 100%;
+  .img-sobre {
+    text-align: center;
+    margin-top: 0px;
   }
-  .box2-time h1{
-    padding-top: 50px;
-    padding-left: 5%;
-  }
-  .box3-dev{
-    width: 50%;
-    max-height: 100%;
-    background-color: red;
-    padding: 0 3%;
-  }
-  .box3-dev h1 {
-    padding-top: 50px;
-    padding-left: 5%;
-    color: var(--cor);
-  }
-  .box-none1{
+  .box1-sobre-none {
     display: none;
   }
-  .box-none2{
+  .box2-sobre-none {
     display: none;
   }
 }
 
-/*QUEBRA LINHA*/
+/*************************QUEBRA LINHA************************/
 
 .box-msg {
   background-color: white;
@@ -444,7 +405,7 @@ body {
 .contato {
   width: 100%;
   background-color: var(--cor);
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   padding-top: 100px;
 }
 /**/
@@ -557,7 +518,27 @@ body {
   border-radius: 30px;
   filter: grayscale(80%);
 }
-/**/
+/*Responsivo contato*/
+@media (max-width: 1154px) {
+  .contato-center {
+    margin: auto;
+    width: 1200px;
+    max-width: 100%;
+    display: block;
+  }
+  .box1-contato {
+    width: 100%;
+    max-width: 100%;
+    padding: 2% 2%;
+  }
+  .img-contato {
+    width: 100%;
+    max-width: 500px;
+    padding: 0 2%;
+    display: block;
+    margin: 50px auto;
+  }
+}
 /********************MAPA***************************/
 .maps {
   width: 100%;
