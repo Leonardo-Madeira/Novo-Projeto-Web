@@ -86,21 +86,28 @@
       </div>
       <div class="center-sobre3">
         <div class="box1-sobre-extra"></div>
-        <div class="box1-sobre">
-          <h1>Nosso time</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus ipsum sequi perferendis obcaecati fugiat enim voluptates, a laudantium perspiciatis beatae blanditiis possimus quam molestiae nesciunt minima distinctio asperiores. Eius, quas.</p>
-        </div>
-        <div class="box2-sobre">
-          <div class="sobre-pessoa">
-            <h1>nome da pessoa</h1>
-            <h3>profissão</h3>
-          </div>
-            <div class="pessoa">
-              <img src="" alt="">
+          <div class="box1-sobre">
+            <div class="box-width">
+              <h1>Nosso time</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, distinctio itaque. A quo excepturi, non dicta dolore dolorem, aut neque fuga eius beatae cum sed commodi minus quis vel iusto!</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus ipsum sequi perferendis obcaecati fugiat enim voluptates, a laudantium perspiciatis beatae blanditiis possimus quam molestiae nesciunt minima distinctio asperiores. Eius, quas.</p>
             </div>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo quibusdam corporis eius ducimus harum iste, veniam tenetur amet neque, debitis maiores eum sint odio cumque culpa! Amet veniam beatae aliquam.</p>
+          </div>
+        <div class="box2-sobre">
+          <div class="center-sobre-pessoa">    
+                <div class="sobre-pessoa">
+                  <h1>Amanda Monteiro</h1>
+                  <h3>CEO / Co-founder</h3>
+                </div>
+                <div class="pessoa">
+                  <img src="/web/img/DEPOIMENTO1.png" alt="">
+                </div> 
+          </div>
+          <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores illum atque repellendus repellat quod. Reiciendis aut placeat sed enim architecto autem, animi veritatis, facilis laborum aspernatur cumque error, nam deserunt?</p>
         </div>
         <div class="box2-sobre-extra"></div>
+        </div>
+
       </div>
     </section>
 
@@ -141,7 +148,7 @@
       <div class="center-maps">
         <div class="conteudo-mapa">
           <h1>Faça uma visita</h1>
-          <div id="googleMap" style="width: 100%; height: 400px"></div>
+          <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=rua%20hercilio%20luz%20Florian%C3%B3polis+(mymap)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='http://maps-generator.com/pt'>Maps-Generator</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=6cf23a87fa440c23fbfe2be68ba41f5537e29d43'></script>
         </div>
       </div>
     </section>
@@ -164,23 +171,10 @@
         document.getElementById('mainx').style.marginLeft = '0'
       }
     </script>
-    <script>
-      function myMap() {
-        var mapProp = {
-          center: new google.maps.LatLng(40.508742, -0.12085),
-          zoom: 5
-        }
-        var map = new google.maps.Map(
-          document.getElementById('googleMap'),
-          mapProp
-        )
-      }
-      google.maps.event.addListener(marker, 'click', function () {
-        map.setZoom(9)
-        map.setCenter(marker.getPosition())
-      })
-    </script>
+    
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    
+    <!--jQuery-->
+
   </body>
 </html>
