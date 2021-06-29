@@ -291,7 +291,7 @@ body {
   max-width: 100%;
   display: block;
   margin: auto;
-  padding: 0 0.5%;
+
 }
 .text-sobre {
   padding: 100px 3%;
@@ -326,27 +326,31 @@ body {
 .box2-sobre-none {
   width: 50%;
   height: 300px;
+
 }
 /**/
 .box1-sobre-extra {
-  width: 30%;
+  width: 40%;
   height: auto;
   background-color: var(--cor);
 }
 .box2-sobre-extra {
-  width: 30%;
+  width: 40%;
   height: auto;
+
 }
 /**/
 .center-sobre3 {
   display: flex;
   width: 100%;
+  padding-bottom: 20px;
 
 }
 .box1-sobre {
-  width: 70%;
+  width: 50%;
   height: auto;
   background-color: var(--cor);
+  padding-bottom: 50px;
 }
 .box1-sobre h1{
   padding-top: 40px;
@@ -358,11 +362,20 @@ body {
   color: rgba(255, 255, 255, 0.644);
 }
 .box2-sobre {
-  width: 70%;
+  width: 50%;
   height: auto;
 }
+.center-sobre-pessoa{
+  display: flex;
+  padding-top: 20px;
+}
+.pessoa{
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
 .sobre-pessoa{
-  padding-top: 40px;
   padding-left: 5%;
 }
 .sobre-pessoa h3{
@@ -371,6 +384,7 @@ body {
 .box2-sobre p{
   padding-left: 5%;
   color: rgba(0, 0, 0, 0.568);
+  display: block;
 }
 
 
@@ -391,6 +405,69 @@ body {
   .box2-sobre-none {
     display: none;
   }
+  .box1-sobre-extra{
+    display: none;
+  }
+  .box2-sobre-extra{
+    display: none;
+  }
+  .box1-sobre{
+    width: 50%;
+  }
+  .box2-sobre{
+    width: 50%;
+    padding:0 5%;
+  }
+}
+@media(max-width:1384px){
+  .box1-sobre-extra {
+    width: 20%;
+  }
+  .box1-sobre{
+    width: 70%;
+  }
+  .box2-sobre-extra {
+    width: 20%;
+  }
+  .box2-sobre{
+    width: 70%;
+  }
+}
+
+@media(max-width:600px){
+  .center-sobre3{
+    display: block;
+    margin: auto;
+  }
+  .box1-sobre{
+    width: 100%;
+    padding: 0 10%;
+  }
+  .box2-sobre{
+    width: 100%;
+  }
+  .center-sobre-pessoa{
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .sobre-pessoa{
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .pessoa{
+    padding-bottom: 30px;
+    padding: 10px;
+  }
+
+}
+@media(max-width:340px){
+  .center-sobre-pessoa{
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+  }
+
 }
 
 /*************************QUEBRA LINHA************************/
@@ -571,6 +648,13 @@ body {
   color: white;
   padding: 120px 270px;
   font-size: 40px;
+}
+.googleMap{
+  max-width: 100%;
+}
+#googleMap{
+  width: 100%;
+  max-width: 100%;
 }
 
 /*&********footer*************/
